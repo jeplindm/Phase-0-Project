@@ -1,0 +1,148 @@
+*{
+    font-weight: bold;
+    font-family: serif;
+    color: rgb(0, 0, 0)
+}
+
+/* Set Background */
+body {
+    background-image: url("https://i.pinimg.com/originals/e6/d6/de/e6d6de4b2197cc8e4e12555e121e0f0a.gif");
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-repeat: repeat;
+}
+
+button {
+    background: none;
+    color: white;
+    width: 240px;
+    height: 80px;
+    border: 3px solid white;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:before{
+    content: '';
+    display: block;
+    position:absolute;
+    background: rgba(255,255,255,.5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+
+button:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,0.2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+button:hover{
+    background: goldenrod;
+    cursor: pointer;
+}
+
+button:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s; 
+}
+button:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s; 
+}
+
+
+h1 {
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    margin-top: 2cm;
+    font-weight: bold;
+    font-size: 45px;
+    height:2cm;
+}
+
+.core {
+    margin-top: 4cm;
+    margin-left: 10cm;
+
+}
+#fname {
+    color:whitesmoke;
+    width: 50%;
+    height: 1cm;
+    font-family: monospace;
+}
+
+
+#label {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: monospace;
+    margin-bottom: 5cm;
+    
+}
+
+.audio {
+    margin-top: 1cm;
+    margin-left: 3px;
+
+}
+
+h3{
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+.show{
+    color: white;
+    text-align: center;
+    margin-top: 2cm;
+    font-family: cursive;
+    font-size: 40px;
+}
+
+#opening {
+    padding-bottom: 10px;
+    margin-top: 1cm;
+}
+
+footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding: 10px 0px 10px 0px;
+    color: white;
+    background-color: white;
+    text-align: center;
+      
+    
+}
